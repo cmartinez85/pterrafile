@@ -2,7 +2,7 @@
 
 https://github.com/claranet/python-terrafile
 
-It allows to run install Terraform modules from a Terrafile using Docker.
+It allows to run cache Terraform modules from a Terrafile using Docker.
 
 ## Install (build)
 
@@ -15,7 +15,7 @@ docker build -t pterrafile .
 ```bash
 
 docker run --rm -it \
--v `pwd`:/app/ pterrafile Terrafile
+-v `pwd`:/app/ pterrafile pterrafile Terrafile
 ```
 
 ## Extend
