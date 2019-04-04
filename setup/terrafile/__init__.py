@@ -33,7 +33,7 @@ def get_source_from_registry(source, version):
 
 
 def add_github_token(github_download_url,token):
-    github_repo_url_pattern = re.compile('.*github.com/(.*)/(.*)\.git')
+    github_repo_url_pattern = re.compile('.*github.com[:|/](.*)/(.*)\.git')
     match = github_repo_url_pattern.match(github_download_url)
     url = github_download_url
     if match:
@@ -121,9 +121,10 @@ def update_modules(path):
         if has_git_tag(path=target, tag=version):
             print('Fetched {}/{}'.format(module_path_name, name))
             continue
-        print os.getenv('GITHUB_TOKEN')
+
         # add token to tthe source url if exists
         if 'GITHUB_TOKEN' in os.environ:
+            print('GITHUB_TOKEN environment variable detected. It will be used to clone source repos.')
             source = add_github_token(source, os.getenv('GITHUB_TOKEN'))
         # Delete the old directory and clone it from scratch.
         print('Fetching {}/{}'.format(module_path_name, name))
