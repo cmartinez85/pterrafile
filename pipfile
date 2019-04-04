@@ -6,7 +6,7 @@ name = "pypi"
 
 [packages]
 
-terrafile = 'https://github.com/cmartinez85/python-terrafile.git', ref="v1.0"
+terrafile = { git= 'https://github.com/cmartinez85/python-terrafile.git', ref="073fd8cff5922a7b3f284cca85d5d712e9d41b0e"}
 
 [requires]
 
