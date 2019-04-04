@@ -7,6 +7,6 @@ RUN apk add git \
  && pip install -r /requirements.txt \
  && pip install -e /tmp \
  && rm /requirements.txt \
- && rm -R /tmp/setup \
+ && rm -rf /tmp/setup \
  && mkdir -p /app
 WORKDIR /app
