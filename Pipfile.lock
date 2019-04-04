@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5c58d558a28461f692d71eeae61e361465268548476d76f45daf81afb29ec90f"
+            "sha256": "65a1ccaced0e2bbbed5d9e20e4651aabbee18bb37e83e6fa548caa6f6b601a50"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -15,11 +15,6 @@
             }
         ]
     },
-    "default": {
-        "terrafile": {
-            "git": "https://github.com/cmartinez85/python-terrafile.git",
-            "ref": "073fd8cff5922a7b3f284cca85d5d712e9d41b0e"
-        }
-    },
+    "default": {},
     "develop": {}
 }

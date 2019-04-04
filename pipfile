@@ -6,8 +6,6 @@ name = "pypi"
 
 [packages]
 
-terrafile = { git= 'https://github.com/cmartinez85/python-terrafile.git', ref="073fd8cff5922a7b3f284cca85d5d712e9d41b0e"}
-
 [requires]
 
 python_full_version = "2.7"

@@ -121,7 +121,7 @@ def update_modules(path):
         if has_git_tag(path=target, tag=version):
             print('Fetched {}/{}'.format(module_path_name, name))
             continue
-
+        print os.getenv('GITHUB_TOKEN')
         # add token to tthe source url if exists
         if 'GITHUB_TOKEN' in os.environ:
             source = add_github_token(source, os.getenv('GITHUB_TOKEN'))
