@@ -123,7 +123,7 @@ def update_modules(path):
             continue
 
         # add token to tthe source url if exists
-        if 'GITHUB_TOKEN' in os.environ:
+        if 'GITHUB_TOKEN' in os.environ and os.getenv('GITHUB_TOKEN') is not '':
             print('GITHUB_TOKEN environment variable detected. It will be used to clone source repos.')
             source = add_github_token(source, os.getenv('GITHUB_TOKEN'))
         # Delete the old directory and clone it from scratch.
