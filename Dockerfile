@@ -4,6 +4,7 @@ ADD requirements.txt /
 ADD setup /tmp
 RUN apk add git \
     openssh-client \
+     make \
  && pip install -r /requirements.txt \
  && pip install -e /tmp \
  && rm /requirements.txt \
