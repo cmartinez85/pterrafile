@@ -1,7 +1,7 @@
 -i https://pypi.python.org/simple
-certifi==2018.11.29
+certifi==2019.6.16
 chardet==3.0.4
 idna==2.8
-pyyaml==3.13
-requests==2.21.0
-urllib3==1.24.1
+pyyaml==5.1.1
+requests==2.22.0
+urllib3==1.25.3
