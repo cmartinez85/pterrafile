@@ -8,7 +8,7 @@ import yaml
 
 
 REGISTRY_BASE_URL = 'https://registry.terraform.io/v1/modules'
-GITHUB_DOWNLOAD_URL_RE = re.compile('https://[^/]+/repos/([^/]+)/([^/]+)/tarball/([^/]+)/.*')
+GITHUB_DOWNLOAD_URL_RE = re.compile('git::https://.*/(.*)/(.*)\?ref=(.*)')
 
 
 def get_source_from_registry(source, version):
